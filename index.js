@@ -54,7 +54,8 @@ module.exports = {
         }],
         "no-use-before-define": "error",
         "padded-blocks": "off",
-        "arrow-parens": "off"
+        "arrow-parens": "off",
+        "no-trailing-spaces": "off"
     },
     "globals": {
         "BX": true
