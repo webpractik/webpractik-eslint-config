@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-webpractik",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Eslint config for webpracrik JavaScript styleguides",
   "main": "index.js",
   "scripts": {
@@ -17,9 +17,6 @@
   "author": "Startsev Alexey",
   "license": "ISC",
   "dependencies": {
-
-  },
-  "devDependencies": {
     "babel-eslint": "^10.0.1",
     "eslint": "^4.19.1",
     "eslint-config-google": "^0.9.1",
