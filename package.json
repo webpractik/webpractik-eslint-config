@@ -1,6 +1,6 @@
 {
   "name": "webpractik-eslint-config",
-  "version": "0.0.1",
+  "version": "0.1",
   "description": "Eslint config for webpracrik JavaScript styleguides",
   "main": "index.js",
   "scripts": {
