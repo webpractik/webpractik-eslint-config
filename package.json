@@ -6,6 +6,10 @@
   "scripts": {
     "test": "test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/webpractik/webpractik-eslint-config.git"
+  },
   "keywords": [
     "eslint",
     "webpractik"
