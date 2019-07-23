@@ -1,6 +1,6 @@
-Подключение ESLint к проекту.
+<h1>Подключение ESLint к проекту.</h1>
 
-#Установка пакета
+<h2>Установка пакета</h2>
 В корневой папке или в папке /local/static/ (в зависимости от проекта) устанавливаем
 пакет с нашей конфигурацией eslint.
 
@@ -26,7 +26,7 @@ npm i eslint-config-webpractik --save-dev
 
 Полный список правил и документацию по настройке можно найти на сайте <a href="https://eslint.org/">https://eslint.org/</a>
 
-#Интеграция с PhpStorm
+<h2>Интеграция с PhpStorm</h2>
 
 Eslint по-умолчанию уже установлен в PhpStorm, остается лишь его включить и настроить.
 
@@ -40,8 +40,7 @@ Settings -> Language & Frameworks -> JavaSctipt -> Code Quality Tools -> Eslint
 - В **Configuration file** указываем путь к файлу .eslint
 
 
-**Были добавлены следующие пакеты правил:**
-
+<h2>Пакеты правил</h2>
 - **"eslint:recommended"** - рекомендуемые правила. Здесь сборка просто хороших практик написания кода на JS.
 - **"google"** - настройки линтера, которыми пользуются в компании Google.
 - **"plugin:react/recommended"** - правила линтинга для react-приложений.
@@ -62,7 +61,7 @@ Settings -> Language & Frameworks -> JavaSctipt -> Code Quality Tools -> Eslint
 **use-isnan** - используем isNaN, когда проверяем является ли что-либо числом. <br>Подробнее: https://eslint.org/docs/rules/use-isnan#require-calls-to-isnan-when-checking-for-nan-use-isnan<br><br>
 **no-dupe-class-members** - следим за дублированием в классах. <br>Подробнее: https://eslint.org/docs/rules/no-dupe-class-members#disallow-duplicate-name-in-class-members-no-dupe-class-members<br><br>
 **no-unused-vars** - держим код в чистоте, удаляем неиспользуемые переменные. <br>Подробнее: https://eslint.org/docs/rules/no-unused-vars#disallow-unused-variables-no-unused-vars<br><br>
-**no-magic-numbers** - избавляемся от литералов, выносим в константу. Исколючение: индексы массива и числа -1, 0, 1, 2. <br>Подробнее: https://eslint.org/docs/rules/no-magic-numbers#disallow-magic-numbers-no-magic-numbers<br><br>
+**no-magic-numbers** - избавляемся от литералов, выносим в константу. Исключение: индексы массива и числа -1, 0, 1, 2. <br>Подробнее: https://eslint.org/docs/rules/no-magic-numbers#disallow-magic-numbers-no-magic-numbers<br><br>
 **no-use-before-define** - читаемость лучше, если объявления переменной происходит до ее использования. <br>Подробнее: https://eslint.org/docs/rules/no-use-before-define#disallow-early-use-no-use-before-define<br><br>
 **padded-blocks** - выключена проверка на отступы в блоках. <br>Подробнее: https://eslint.org/docs/rules/padded-blocks#require-or-disallow-padding-within-blocks-padded-blocks<br><br>
 **arrow-parens** - Разрешаем объявлять стрелочные функции с одним аргументом без скобок. <br>Подробнее: https://eslint.org/docs/rules/arrow-parens#require-parens-in-arrow-function-arguments-arrow-parens<br><br>
