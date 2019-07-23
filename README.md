@@ -45,7 +45,7 @@ Settings -> Language & Frameworks -> JavaSctipt -> Code Quality Tools -> Eslint
 - **google** - настройки линтера, которыми пользуются в компании Google.<br>
 - **plugin:react/recommended** - правила линтинга для react-приложений.<br>
 <br>
-
+<br>
 **Дополнительные правила, которые подстраивают под наш код-стиль, плюс те, которые показались полезными для внедрения:**
 
 **indent: 4** - Отступ выставлен в 4 пробела.<br>Подробнее: https://eslint.org/docs/rules/indent#enforce-consistent-indentation-indent<br><br>
