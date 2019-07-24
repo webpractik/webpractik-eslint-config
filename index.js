@@ -25,7 +25,7 @@ module.exports = {
         "no-invalid-this": "off",
         "no-duplicate-imports": "warn",
         "eqeqeq": ["warn", "always"],
-        "max-len": [2, {
+        "max-len": [1, {
             "code": 120,
             "tabWidth": 4,
             "ignoreUrls": true,
