@@ -8,12 +8,10 @@
 npm i eslint-config-webpractik --save-dev
 ```
 
-Далее нужно создать в этой же директории файл с именем **.eslintrc** и внутри него прописать строки:
+Далее нужно создать в этой же директории файл с именем **.eslintrc** и добавить в гит. Это можно сделать командой:
 
 ```
-{
-   "extends": ["webpractik"]
-}
+echo '{"extends": ["webpractik"]}' >> .eslintrc && git add .eslintrc
 ```
 
 Если нужно дописать свои правила, следует добавить секцию rules ниже. Например:
@@ -22,6 +20,14 @@ npm i eslint-config-webpractik --save-dev
 "rules": {
     "no-mixed-operators": "error"
 }
+```
+
+Если вы используете свои глобальные переменные, вы можете добавить в .eslintrc 
+
+```
+"globals": {
+        "globalVar": true
+    }
 ```
 
 Полный список правил и документацию по настройке можно найти на сайте <a href="https://eslint.org/">https://eslint.org/</a>
@@ -39,6 +45,18 @@ Settings -> Language & Frameworks -> JavaSctipt -> Code Quality Tools -> Eslint
 - Выбираем **Node Interpreter** и **ESLint package** (если до этого все сделали правильно, то Storm подскажет варианты)
 - В **Configuration file** указываем путь к файлу .eslint
 
+В eslint есть возможность работать с консольной утилитой.
+Установить ее можно командой:
+```
+npm i -g eslint
+```
+
+В помощью этой утилиты возможно исправление code-style во многих файлах разом. Для этого используется команда:
+
+```
+eslint --fix **/*.js
+```
+Не используйте эту команду за пределами папки local, иначе он пойдет по всем js-файлам битрикса. 
 
 <h2>Пакеты правил</h2>
 - **eslint:recommended** - рекомендуемые правила. Здесь сборка просто хороших практик написания кода на JS.<br>
