@@ -42,7 +42,7 @@
         "no-class-assign": "error",
         "no-dupe-class-members": "error",
         "no-unused-vars": ["error", { "vars": "local" }],
-        "no-magic-numbers": ["error", {
+        "no-magic-numbers": ["warn", {
             "ignoreArrayIndexes": true,
             "ignore": [0, 1, 2]
         }],
