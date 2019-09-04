@@ -24,6 +24,8 @@ module.exports = {
         "no-var": "off",
         "no-invalid-this": "off",
         "no-duplicate-imports": "warn",
+        "require-jsdoc": "off",
+        "camelcase": "off",
         "eqeqeq": ["warn", "always"],
         "max-len": [1, {
             "code": 120,
@@ -42,7 +44,7 @@ module.exports = {
         "use-isnan": "error",
         "no-dupe-class-members": "error",
         "no-unused-vars": ["error", { "vars": "local" }],
-        "no-magic-numbers": ["error", {
+        "no-magic-numbers": ["warn", {
             "ignoreArrayIndexes": true,
             "ignore": [-1, 0, 1, 2]
         }],
